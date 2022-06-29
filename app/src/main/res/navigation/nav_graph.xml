@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainMenu">
+
+    <fragment
+        android:id="@+id/mainMenu"
+        android:name="com.pride.testmisu.MainMenu"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenu_to_quest2"
+            app:destination="@id/quest2" />
+        <action
+            android:id="@+id/action_mainMenu_to_quest1"
+            app:destination="@id/quest1" />
+    </fragment>
+    <fragment
+        android:id="@+id/quest1"
+        android:name="com.pride.testmisu.QuestOne"
+        android:label="fragment_quest1"
+        tools:layout="@layout/fragment_quest1" />
+    <fragment
+        android:id="@+id/quest2"
+        android:name="com.pride.testmisu.Quest2"
+        android:label="fragment_quest2"
+        tools:layout="@layout/fragment_quest2" />
+</navigation>
